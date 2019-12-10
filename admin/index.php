@@ -54,12 +54,12 @@ desired effect
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <?php
-    require_once "layout_admin/header.php";
+    require_once "layouts/header.php";
   ?>
   
   <!-- Left side column. contains the logo and sidebar -->
   <?php
-    require_once "layout_admin/main_sidebar.php";
+    require_once "layouts/main_sidebar.php";
     ?>
 
 
@@ -90,7 +90,7 @@ desired effect
 
   <!-- Main Footer -->
   <?php
-    require_once "layout_admin/main_footer.php";
+    require_once "layouts/main_footer.php";
   ?>
 
   <!-- /.control-sidebar -->

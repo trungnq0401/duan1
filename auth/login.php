@@ -56,6 +56,10 @@
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+
+					<div class="text-center p-t-12 text-danger txt1">
+						<?= isset($_GET['err'])?$_GET['err']:""?>
+					</div>
 					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
@@ -73,7 +77,7 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="new_account.php">
+						<a class="txt2" href="<?=BASE_URL?>client/account/create.php">
 							Create your Account
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>

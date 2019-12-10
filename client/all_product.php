@@ -1,5 +1,6 @@
 <?php 
     require_once '../common/db.php';
+    require_once "../common/const.php";
     $products = executequery("select * from products",true);
     if (isset($_GET['search'])) {
         $search = $_GET['search'];
@@ -52,7 +53,6 @@
                         <div class="product-carousel-price">
                             <ins><?=number_format($product['sale'], 0, ".",".")." VNĐ"?></ins> <del><?=number_format($product['price'], 0, ".",".")." VNĐ"?></del>
                         </div>  
-                        
                         <div class="product-option-shop">
                             <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
                         </div>                       

@@ -4,12 +4,18 @@
                 <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
+                            <?php if (isset($_SESSION['account'])): ?>
+                            <li><a href="<?= BASE_URL?>client/account/show.php"><i class="fa fa-user"></i> My Account</a></li>
+                            <?php endif ?>
                             <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                            <li><a href="../cart.php"><i class="fa fa-user"></i> My Cart</a></li>
+                            <li><a href="<?=BASE_URL?>client/cart/index.php"><i class="fa fa-user"></i> My Cart</a></li>
                             <li><a href="../checkout.php"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="http://localhost/duan1_tin/auth/login.php"><i class="fa fa-user"></i> Login</a></li>
-                        <form action="http://localhost/duan1_tin/client/all_product.php">
+                             <?php if (isset($_SESSION['account'])): ?>
+                            <li><a href="<?= BASE_URL?>auth/logout.php"><i class="fa fa-user"></i> Logout</a></li>
+                             <?php else: ?>
+                            <li><a href="<?= BASE_URL?>auth/login.php"><i class="fa fa-user"></i> Login</a></li>
+                             <?php endif ?>
+                        <form action="<?= BASE_URL?>duan1_tin/client/all_product.php">
                             <input type="text" name="search" placeholder="Search products...">
                             <input type="submit" value="Search">
                         </form>

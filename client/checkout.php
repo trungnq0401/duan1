@@ -1,3 +1,7 @@
+<?php
+    require_once "../common/const.php";
+    require_once "../common/const.php";
+?>
 <!DOCTYPE html>
 <!--
 	ustora by freshdesignweb.com
@@ -11,11 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checkout Page - Ustora Demo</title>
     
-    <?php require_once 'access/layout/css_font.php'; ?>
+    <?php include_once 'access/layout/css_font.php'; ?>
   </head>
   <body>
    
-    <?php require_once 'access/layout/header.php'; ?>
+    <?php include_once 'access/layout/header.php'; ?>
     
     <div class="product-big-title-area">
         <div class="container">
@@ -885,7 +889,7 @@
     </div>
 
 
-    <?php require_once 'access/layout/footer.php'; ?>   
-    <?php require_once 'access/layout/js.php'; ?>
+    <?php include_once 'access/layout/footer.php'; ?>   
+    <?php include_once 'access/layout/js.php'; ?>
   </body>
 </html>

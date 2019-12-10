@@ -1,32 +1,27 @@
 <?php
+session_start();
 require_once '../common/db.php';
+require_once '../common/const.php';
 $slides = executequery('select * from slides', true);
 $categories = executequery('select * from categories limit 4', true);
 $products_new = executequery('select * from products order by `id` DESC limit 7',true);
 $products_seller = executequery('select * from products order by `selling` DESC limit 3',true);
 $products_view = executequery('select * from products order by `view` DESC limit 3',true);
 $products_rank = executequery('select * from products order by `star` DESC limit 3',true);
-
 ?>
 <!DOCTYPE html>
-<!--
-	ustora by freshdesignweb.com
-	Twitter: https://twitter.com/freshdesignweb
-	URL: https://www.freshdesignweb.com/ustora/
--->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ustora Demo</title>
-    
-    <?php require_once 'access/layout/css_font.php'; ?>
+    <?php include_once 'access/layout/css_font.php'; ?>
 
   </head>
   <body>
    
-    <?php require_once 'access/layout/header.php'; ?>
+    <?php include_once 'access/layout/header.php'; ?>
     
     <div class="slider-area">
         	<!-- Slider -->
@@ -231,8 +226,7 @@ $products_rank = executequery('select * from products order by `star` DESC limit
     </div> <!-- End product widget area -->
     
     
-    <?php require_once 'access/layout/footer.php'; ?>
-   
-    <?php require_once 'access/layout/js.php'; ?>
+    <?php include_once './access/layout/js.php'; ?>
+    <?php include_once './access/layout/footer.php'; ?>
   </body>
 </html>

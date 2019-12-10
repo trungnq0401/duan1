@@ -21,7 +21,7 @@
   $_SESSION['account'] = $account;
 
   if ($account['role']==1) {
-    header("location:".BASE_URL); die();
+    header("location:".BASE_URL.'client'); die();
   }
-  header("location:".BASE_URL."auth/");die();
+  header("location:".BASE_URL.'admin');die();
  ?>
