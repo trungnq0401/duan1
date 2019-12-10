@@ -1,6 +1,6 @@
 <?php
-    require_once "../common/const.php";
-    require_once "../common/const.php";
+require_once "../common/const.php";
+require_once "../common/const.php";
 ?>
 <!DOCTYPE html>
 <!--
@@ -9,18 +9,20 @@
 	URL: https://www.freshdesignweb.com/ustora/
 -->
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checkout Page - Ustora Demo</title>
-    
+
     <?php include_once 'access/layout/css_font.php'; ?>
-  </head>
-  <body>
-   
+</head>
+
+<body>
+
     <?php include_once 'access/layout/header.php'; ?>
-    
+
     <div class="product-big-title-area">
         <div class="container">
             <div class="row">
@@ -32,8 +34,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -46,7 +48,7 @@
                             <input type="submit" value="Search">
                         </form>
                     </div>
-                    
+
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Products</h2>
                         <div class="thubmnail-recent">
@@ -54,31 +56,31 @@
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$100.00</del>
-                            </div>                             
+                            </div>
                         </div>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$100.00</del>
-                            </div>                             
+                            </div>
                         </div>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$100.00</del>
-                            </div>                             
+                            </div>
                         </div>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$100.00</del>
-                            </div>                             
+                            </div>
                         </div>
                     </div>
-                    
+
                     <!-- <div class="single-sidebar">
                         <h2 class="sidebar-title">Recent Posts</h2>
                         <ul>
@@ -90,7 +92,7 @@
                         </ul>
                     </div> -->
                 </div>
-                
+
                 <div class="col-md-8">
                     <div class="product-content-right">
                         <div class="woocommerce">
@@ -476,9 +478,9 @@
                                     <div class="col-2">
                                         <div class="woocommerce-shipping-fields">
                                             <h3 id="ship-to-different-address">
-                        <label class="checkbox" for="ship-to-different-address-checkbox">Ship to a different address?</label>
-                        <input type="checkbox" value="1" name="ship_to_different_address" checked="checked" class="input-checkbox" id="ship-to-different-address-checkbox">
-                        </h3>
+                                                <label class="checkbox" for="ship-to-different-address-checkbox">Ship to a different address?</label>
+                                                <input type="checkbox" value="1" name="ship_to_different_address" checked="checked" class="input-checkbox" id="ship-to-different-address-checkbox">
+                                            </h3>
                                             <div class="shipping_address" style="display: block;">
                                                 <p id="shipping_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
                                                     <label class="" for="shipping_country">Country <abbr title="required" class="required">*</abbr>
@@ -881,15 +883,16 @@
                                 </div>
                             </form>
 
-                        </div>                       
-                    </div>                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <?php include_once 'access/layout/footer.php'; ?>   
+    <?php include_once 'access/layout/footer.php'; ?>
     <?php include_once 'access/layout/js.php'; ?>
-  </body>
+</body>
+
 </html>
